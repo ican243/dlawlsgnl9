@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <canvas id="myCanvas" width="1000" height="1000" style="border: 10px solid">
+    </canvas>
+    <script type="text/javascript">
+        var ctx = document.getElementById("myCanvas");
+        var myContext = ctx.getContext("2d");
+
+
+
+
+        myContext.strokeRect(10, 10, 200, 150);
+        myContext.fillStyle = "blue";
+        myContext.fillRect(250, 10, 200, 150);
+        myContext.fillStyle = "red";
+        myContext.fillRect(10, 200, 200, 150);
+        myContext.clearRect(270, 20, 100, 100);
+    </script>
+
+</body>
+
+</html>
